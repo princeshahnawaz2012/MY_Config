@@ -3,8 +3,11 @@
 //---------------------------------------------------------------
 // MY_Config.php
 //
-// Part of the Bonfire CMF.
-// by Lonnie Ezell (http://igniteyourcode.com/bonfire)
+// This is an extension of the default Config library that ships 
+// with CodeIgniter 1.7.2 to allow saving and loading of settings 
+// from files..
+//
+// by Lonnie Ezell (http://lonnieezell.com)
 //
 //---------------------------------------------------------------
 
@@ -126,6 +129,9 @@ class MY_Config extends CI_Config {
 	
 	//---------------------------------------------------------------
 	
+	/**
+	 * Retrieves the config/database.php file settings.
+	 */  
 	public function get_db() 
 	{
 		$file = 'database';
@@ -155,6 +161,9 @@ class MY_Config extends CI_Config {
 	
 	//---------------------------------------------------------------
 	
+	/**
+	 *	Saves the settings to the config/database.php file.
+	 */
 	public function save_db($settings=null) 
 	{
 		if (!is_array($settings	))
@@ -223,5 +232,5 @@ class MY_Config extends CI_Config {
 
 // END Library class
 
-/* End of file Library.php */
-/* Location: ./application/libraries/Library.php */
+/* End of file MY_Config.php */
+/* Location: ./application/libraries/MY_Config.php */

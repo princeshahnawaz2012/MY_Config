@@ -1,0 +1,3 @@
+h1. MY_Config
+
+This is an extension of the default Config library that ships with CodeIgniter 1.7.2 to allow saving and loading of settings from files. It has not been tested under 2.0, yet.
